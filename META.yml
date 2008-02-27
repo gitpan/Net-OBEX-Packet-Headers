@@ -1,6 +1,6 @@
 ---
 name: Net-OBEX-Packet-Headers
-version: 0.001
+version: 0.002
 author:
   - 'Zoffix Znet <zoffix@cpan.org>'
 abstract: construct and parse OBEX packet headers
@@ -14,19 +14,22 @@ build_requires:
 provides:
   Net::OBEX::Packet::Headers:
     file: lib/Net/OBEX/Packet/Headers.pm
+    version: 0.002
+  Net::OBEX::Packet::Headers::Base:
+    file: lib/Net/OBEX/Packet/Headers/Base.pm
     version: 0.001
   Net::OBEX::Packet::Headers::Byte1:
     file: lib/Net/OBEX/Packet/Headers/Byte1.pm
-    version: 0.001
+    version: 0.002
   Net::OBEX::Packet::Headers::Byte4:
     file: lib/Net/OBEX/Packet/Headers/Byte4.pm
-    version: 0.001
+    version: 0.002
   Net::OBEX::Packet::Headers::ByteSeq:
     file: lib/Net/OBEX/Packet/Headers/ByteSeq.pm
-    version: 0.001
+    version: 0.002
   Net::OBEX::Packet::Headers::Unicode:
     file: lib/Net/OBEX/Packet/Headers/Unicode.pm
-    version: 0.001
+    version: 0.002
 generated_by: Module::Build version 0.2808
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

@@ -3,6 +3,7 @@ Changes
 MANIFEST
 README
 lib/Net/OBEX/Packet/Headers.pm
+lib/Net/OBEX/Packet/Headers/Base.pm
 lib/Net/OBEX/Packet/Headers/Unicode.pm
 lib/Net/OBEX/Packet/Headers/ByteSeq.pm
 lib/Net/OBEX/Packet/Headers/Byte1.pm

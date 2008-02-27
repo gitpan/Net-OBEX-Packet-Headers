@@ -3,7 +3,7 @@ package Net::OBEX::Packet::Headers;
 use strict;
 use warnings;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use Carp;
 use Net::OBEX::Packet::Headers::Unicode;
@@ -342,6 +342,7 @@ See C<parse()> method for more information.
 =head1 AUTHOR
 
 Zoffix Znet, C<< <zoffix at cpan.org> >>
+(L<http://zoffix.com>, L<http://haslayout.net>)
 
 =head1 BUGS
 

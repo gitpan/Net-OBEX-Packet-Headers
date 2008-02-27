@@ -7,7 +7,9 @@ use warnings;
 use Carp;
 use Encode qw(encode_utf8);
 
-our $VERSION = '0.001';
+use base 'Net::OBEX::Packet::Headers::Base';
+
+our $VERSION = '0.002';
 
 my %Header_HI_For = (
     name        => "\x01",
@@ -46,30 +48,6 @@ sub make {
     $header .= pack 'n', 4 + length $value;
     $header .= $value . "\x00";
     return $self->header($header);
-}
-
-sub header {
-    my $self = shift;
-    if ( @_ ) {
-        $self->{ header } = shift;
-    }
-    return $self->{ header };
-}
-
-sub value {
-    my $self = shift;
-    if ( @_ ) {
-        $self->{ value } = shift;
-    }
-    return $self->{ value };
-}
-
-sub hi {
-    my $self = shift;
-    if ( @_ ) {
-        $self->{ hi } = shift;
-    }
-    return $self->{ hi };
 }
 
 1;
@@ -178,6 +156,7 @@ produce headers with this new HI.
 =head1 AUTHOR
 
 Zoffix Znet, C<< <zoffix at cpan.org> >>
+(L<http://zoffix.com>, L<http://haslayout.net>)
 
 =head1 BUGS
 

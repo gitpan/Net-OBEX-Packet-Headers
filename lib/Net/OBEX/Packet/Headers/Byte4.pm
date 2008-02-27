@@ -5,7 +5,9 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.001';
+use base 'Net::OBEX::Packet::Headers::Base';
+
+our $VERSION = '0.002';
 
 my %Header_HI_For = (
     count           => "\xC0",
@@ -13,7 +15,6 @@ my %Header_HI_For = (
     timeb           => "\xC4",
     connection_id   => "\xCB",
 );
-
 
 sub new {
     my ( $class, $name, $value ) = @_;
@@ -33,41 +34,6 @@ sub new {
     }, $class;
 }
 
-sub make {
-    my $self = shift;
-
-    my $value = $self->value;
-    unless ( length $value ) {
-        return $self->hi;
-    }
-
-    my $header = $self->hi . $value;
-    return $self->header($header);
-}
-
-sub header {
-    my $self = shift;
-    if ( @_ ) {
-        $self->{ header } = shift;
-    }
-    return $self->{ header };
-}
-
-sub value {
-    my $self = shift;
-    if ( @_ ) {
-        $self->{ value } = shift;
-    }
-    return $self->{ value };
-}
-
-sub hi {
-    my $self = shift;
-    if ( @_ ) {
-        $self->{ hi } = shift;
-    }
-    return $self->{ hi };
-}
 
 1;
 
@@ -185,6 +151,7 @@ produce headers with this new HI.
 =head1 AUTHOR
 
 Zoffix Znet, C<< <zoffix at cpan.org> >>
+(L<http://zoffix.com>, L<http://haslayout.net>)
 
 =head1 BUGS
 
