@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.001';
+our $VERSION = '0.003';
 
 sub new {
     my ( $class, $hi, $value ) = @_;

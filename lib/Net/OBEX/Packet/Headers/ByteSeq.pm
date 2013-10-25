@@ -7,7 +7,7 @@ use Carp;
 
 use base 'Net::OBEX::Packet::Headers::Base';
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 my %Header_HI_For = (
     type            => "\x42",
@@ -116,7 +116,7 @@ manufacturer specific)
 
 =item time
 
-The C<Time> header (date/time stamp – ISO 8601 version
+The C<Time> header (date/time stamp - ISO 8601 version
 - preferred)
 
 =item target

@@ -7,7 +7,7 @@ use Carp;
 
 use base 'Net::OBEX::Packet::Headers::Base';
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 my %Header_HI_For = (
     count           => "\xC0",
@@ -62,7 +62,7 @@ B<WARNING!!! This module is still in alpha stage. Use it for test purposes
 only as interface might change in the future>.
 
 The module provides means to create OBEX protocol C<0xC0>
-(4 byte quantity – transmitted in network byte order (high byte first))
+(4 byte quantity - transmitted in network byte order (high byte first))
 packet headers.
 Unless you are making a custom header you
 probably want to use L<Net::OBEX::Packet::Headers> instead.
@@ -97,7 +97,7 @@ The C<Length> header (the length of the object in bytes)
 
 =item timeb
 
-(B<note the 'b'>) The C<Time> header (date/time stamp – 4 byte version
+(B<note the 'b'>) The C<Time> header (date/time stamp - 4 byte version
 (for compatibility only)) See C<time> in
 L<Net::OBEX::Packet::Headers::ByteSeq> for the
 prefered time header.

@@ -10,8 +10,10 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => 0,
     },
+    configure_requires => { 'Module::Build' => 0.40 },
     requires => {
         'Carp' => 1.04,
+        perl   => 5.006,
     },
     add_to_cleanup      => [ 'Net-OBEX-Packet-Headers-*' ],
     create_makefile_pl => 'traditional',

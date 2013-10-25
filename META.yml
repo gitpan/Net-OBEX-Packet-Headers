@@ -1,36 +1,40 @@
 ---
-name: Net-OBEX-Packet-Headers
-version: 0.002
+abstract: 'construct and parse OBEX packet headers'
 author:
   - 'Zoffix Znet <zoffix@cpan.org>'
-abstract: construct and parse OBEX packet headers
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  Carp: 1.04
 build_requires:
   Test::More: 0
+configure_requires:
+  Module::Build: 0.4
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: Net-OBEX-Packet-Headers
 provides:
   Net::OBEX::Packet::Headers:
     file: lib/Net/OBEX/Packet/Headers.pm
-    version: 0.002
+    version: 0.003
   Net::OBEX::Packet::Headers::Base:
     file: lib/Net/OBEX/Packet/Headers/Base.pm
-    version: 0.001
+    version: 0.003
   Net::OBEX::Packet::Headers::Byte1:
     file: lib/Net/OBEX/Packet/Headers/Byte1.pm
-    version: 0.002
+    version: 0.003
   Net::OBEX::Packet::Headers::Byte4:
     file: lib/Net/OBEX/Packet/Headers/Byte4.pm
-    version: 0.002
+    version: 0.003
   Net::OBEX::Packet::Headers::ByteSeq:
     file: lib/Net/OBEX/Packet/Headers/ByteSeq.pm
-    version: 0.002
+    version: 0.003
   Net::OBEX::Packet::Headers::Unicode:
     file: lib/Net/OBEX/Packet/Headers/Unicode.pm
-    version: 0.002
-generated_by: Module::Build version 0.2808
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    version: 0.003
+requires:
+  Carp: 1.04
+  perl: 5.006
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.003

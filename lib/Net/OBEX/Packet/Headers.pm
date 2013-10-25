@@ -3,7 +3,7 @@ package Net::OBEX::Packet::Headers;
 use strict;
 use warnings;
 
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 use Carp;
 use Net::OBEX::Packet::Headers::Unicode;
@@ -91,7 +91,7 @@ sub _make_header_value {
     #               length prefixed with 2 byte unsigned integer
     # 01 - byte sequence, length prefixed with 2 byte unsigned integer
     # 10 - 1 byte quantity
-    # 11 - 4 byte quantity – transmitted in network byte order
+    # 11 - 4 byte quantity - transmitted in network byte order
 
     my $type = unpack 'B2', $HI_raw;
     if ( $type eq '00' or $type eq '01' ) {
