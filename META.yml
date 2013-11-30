@@ -5,7 +5,7 @@ author:
 build_requires:
   Test::More: 0
 configure_requires:
-  Module::Build: 0.4
+  Module::Build: 0
 dynamic_config: 1
 generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 license: perl
@@ -16,25 +16,25 @@ name: Net-OBEX-Packet-Headers
 provides:
   Net::OBEX::Packet::Headers:
     file: lib/Net/OBEX/Packet/Headers.pm
-    version: 0.003
+    version: 0.004
   Net::OBEX::Packet::Headers::Base:
     file: lib/Net/OBEX/Packet/Headers/Base.pm
-    version: 0.003
+    version: 0.004
   Net::OBEX::Packet::Headers::Byte1:
     file: lib/Net/OBEX/Packet/Headers/Byte1.pm
-    version: 0.003
+    version: 0.004
   Net::OBEX::Packet::Headers::Byte4:
     file: lib/Net/OBEX/Packet/Headers/Byte4.pm
-    version: 0.003
+    version: 0.004
   Net::OBEX::Packet::Headers::ByteSeq:
     file: lib/Net/OBEX/Packet/Headers/ByteSeq.pm
-    version: 0.003
+    version: 0.004
   Net::OBEX::Packet::Headers::Unicode:
     file: lib/Net/OBEX/Packet/Headers/Unicode.pm
-    version: 0.003
+    version: 0.004
 requires:
   Carp: 1.04
   perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.003
+version: 0.004

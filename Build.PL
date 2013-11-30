@@ -10,7 +10,7 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => 0,
     },
-    configure_requires => { 'Module::Build' => 0.40 },
+    configure_requires => { 'Module::Build' => 0 },
     requires => {
         'Carp' => 1.04,
         perl   => 5.006,
@@ -18,5 +18,9 @@ my $builder = Module::Build->new(
     add_to_cleanup      => [ 'Net-OBEX-Packet-Headers-*' ],
     create_makefile_pl => 'traditional',
 );
+
+if ( $ENV{RELEASE_TESTING} ) {
+    system('pod2text lib/Net/OBEX/Packet/Headers.pm > README');
+}
 
 $builder->create_build_script();

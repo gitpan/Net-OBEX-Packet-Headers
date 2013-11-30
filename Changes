@@ -1,5 +1,8 @@
 Revision history for Net-OBEX-Packet-Headers
 
+0.004   2013-11-30
+        - Moved author tests to xt/
+
 0.003   2013-10-24
         - Updated "Changes" file to match the CPAN::Changes::Spec spec
         - Fixed POD errors
@@ -7,7 +10,7 @@ Revision history for Net-OBEX-Packet-Headers
 
 0.002   2008-02-26
         Unknown changes / unknown date
-        
+
 0.001   2008-02-26
         - First version, released on an unsuspecting world.
 

@@ -7,7 +7,7 @@ use Carp;
 
 use base 'Net::OBEX::Packet::Headers::Base';
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 my %Header_HI_For = (
     type            => "\x42",
@@ -60,6 +60,7 @@ sub make {
 
 __END__
 
+=encoding utf8
 
 =head1 NAME
 

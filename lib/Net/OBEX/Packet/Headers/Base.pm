@@ -5,7 +5,7 @@ use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 sub new {
     my ( $class, $hi, $value ) = @_;
@@ -62,6 +62,7 @@ sub hi {
 
 __END__
 
+=encoding utf8
 
 =head1 NAME
 

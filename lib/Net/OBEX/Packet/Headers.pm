@@ -3,7 +3,7 @@ package Net::OBEX::Packet::Headers;
 use strict;
 use warnings;
 
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 use Carp;
 use Net::OBEX::Packet::Headers::Unicode;
@@ -150,6 +150,8 @@ sub _make_header_meanings {
 1;
 
 __END__
+
+=encoding utf8
 
 =head1 NAME
 
