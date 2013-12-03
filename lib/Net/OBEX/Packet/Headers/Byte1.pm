@@ -7,7 +7,7 @@ use Carp;
 
 use base 'Net::OBEX::Packet::Headers::Base';
 
-our $VERSION = '0.004';
+our $VERSION = '0.005';
 
 1;
 

@@ -13,6 +13,7 @@ my $builder = Module::Build->new(
     configure_requires => { 'Module::Build' => 0 },
     requires => {
         'Carp' => 1.04,
+        'Encode' => 0,
         perl   => 5.006,
     },
     add_to_cleanup      => [ 'Net-OBEX-Packet-Headers-*' ],

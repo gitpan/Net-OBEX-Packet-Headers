@@ -3,15 +3,17 @@
 use strict;
 use warnings;
 
-use Test::More tests => 26;
+use Test::More tests => 27;
 
 BEGIN {
     use_ok('Carp');
+    use_ok('Encode');
     use_ok('Net::OBEX::Packet::Headers::Unicode');
     use_ok('Net::OBEX::Packet::Headers::ByteSeq');
     use_ok('Net::OBEX::Packet::Headers::Byte1');
     use_ok('Net::OBEX::Packet::Headers::Byte4');
-	use_ok( 'Net::OBEX::Packet::Headers' );
+    use_ok( 'Net::OBEX::Packet::Headers' );
+
 }
 
 diag( "Testing Net::OBEX::Packet::Headers $Net::OBEX::Packet::Headers::VERSION, Perl $], $^X" );

@@ -7,6 +7,7 @@ WriteMakefile
   'VERSION_FROM' => 'lib/Net/OBEX/Packet/Headers.pm',
   'PREREQ_PM' => {
                    'Carp' => '1.04',
+                   'Encode' => 0,
                    'Test::More' => 0
                  },
   'INSTALLDIRS' => 'site',

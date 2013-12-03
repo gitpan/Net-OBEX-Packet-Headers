@@ -16,25 +16,26 @@ name: Net-OBEX-Packet-Headers
 provides:
   Net::OBEX::Packet::Headers:
     file: lib/Net/OBEX/Packet/Headers.pm
-    version: 0.004
+    version: 0.005
   Net::OBEX::Packet::Headers::Base:
     file: lib/Net/OBEX/Packet/Headers/Base.pm
-    version: 0.004
+    version: 0.005
   Net::OBEX::Packet::Headers::Byte1:
     file: lib/Net/OBEX/Packet/Headers/Byte1.pm
-    version: 0.004
+    version: 0.005
   Net::OBEX::Packet::Headers::Byte4:
     file: lib/Net/OBEX/Packet/Headers/Byte4.pm
-    version: 0.004
+    version: 0.005
   Net::OBEX::Packet::Headers::ByteSeq:
     file: lib/Net/OBEX/Packet/Headers/ByteSeq.pm
-    version: 0.004
+    version: 0.005
   Net::OBEX::Packet::Headers::Unicode:
     file: lib/Net/OBEX/Packet/Headers/Unicode.pm
-    version: 0.004
+    version: 0.005
 requires:
   Carp: 1.04
+  Encode: 0
   perl: 5.006
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.004
+version: 0.005

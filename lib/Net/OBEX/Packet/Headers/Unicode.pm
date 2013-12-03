@@ -9,7 +9,7 @@ use Encode qw(encode_utf8);
 
 use base 'Net::OBEX::Packet::Headers::Base';
 
-our $VERSION = '0.004';
+our $VERSION = '0.005';
 
 my %Header_HI_For = (
     name        => "\x01",
